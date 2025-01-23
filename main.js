@@ -60,3 +60,5 @@ goToProjects.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+const formSubmit = document.querySelector(".submit-btn");

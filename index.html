@@ -414,7 +414,9 @@
           name="contact"
           method="POST"
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <h3 class="mb-4 text-4xl font-semibold">Get In Touch</h3>
           <div class="mb-4">
             <p class="mb-2 text-xl">Hi! My email is...</p>
@@ -436,7 +438,7 @@
           </div>
           <button
             type="submit"
-            class="w-full rounded-sm border-2 border-white bg-vibrant py-2 text-center text-lg font-semibold text-white transition-all hover:bg-white hover:text-vibrant active:scale-[0.99]"
+            class="w-full rounded-sm border-2 border-white bg-vibrant py-2 text-center text-lg font-semibold text-white transition-all hover:bg-white hover:text-vibrant active:scale-[0.99] submit-btn"
           >
             Submit
           </button>
