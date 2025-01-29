@@ -61,4 +61,14 @@ goToProjects.addEventListener("click", () => {
   });
 });
 
-const formSubmit = document.querySelector(".submit-btn");
+const emailField = document.querySelector(".email-field");
+emailField.addEventListener("focusout", () => {
+  emailField.classList.remove("border-[#f4f4f4]");
+  emailField.classList.add("border-white");
+});
+
+const textField = document.querySelector(".text");
+textField.addEventListener("focusout", () => {
+  textField.classList.remove("border-[#f4f4f4]");
+  textField.classList.add("border-white");
+});
