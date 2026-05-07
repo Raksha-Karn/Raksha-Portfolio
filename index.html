@@ -1,424 +1,1326 @@
-<!doctype html>
-<html lang="en" class="scroll-pt-14 scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="./main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Raksha Karn - Software Developer. I build cute, functional software using Python, FastAPI, Django, and ML. Specializing in backend development and AI/ML applications.">
+<meta name="keywords" content="software developer, Python, FastAPI, Django, machine learning, AI/ML, backend development, full stack development, Nepal">
+<meta name="author" content="Raksha Karn">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="canonical" href="https://rakshakarn.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Raksha Karn - Software Developer | Python, FastAPI, ML">
+<meta property="og:description" content="I'm Raksha, a software developer from Nepal specializing in backend development and AI/ML applications. Check out my projects built with Python, FastAPI, Django, and more.">
+<meta property="og:url" content="https://raksha.py">
+<meta property="og:image" content="https://raksha.py/og-image.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Raksha Karn - Software Developer | Python, FastAPI, ML">
+<meta name="twitter:description" content="I'm Raksha, a software developer specializing in backend and AI/ML applications. 3+ years of experience, 50+ projects.">
+<meta name="twitter:image" content="https://raksha.py/og-image.png">
+<meta name="theme-color" content="#FF6B9D">
+<title>Raksha Karn - Software Developer | Python, FastAPI, Django, ML</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Raksha Karn",
+  "url": "https://raksha.py",
+  "email": "rakshakarn07@gmail.com",
+  "image": "https://raksha.py/profile-image.png",
+  "jobTitle": "Software Developer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Freelance"
+  },
+  "sameAs": [
+    "https://github.com/Raksha-Karn",
+    "https://www.linkedin.com/in/raksha-dddd",
+    "https://www.instagram.com/raksha_karn"
+  ],
+  "knowsAbout": ["Python", "FastAPI", "Django", "Machine Learning", "AI/ML", "Backend Development", "PyTorch", "Scikit-learn", "PostgreSQL", "Redis"]
+}
+</script>
+<style>
+  :root {
+    --pink: #FF9EBA;
+    --hot-pink: #FF6B9D;
+    --lavender: #C9B1FF;
+    --mint: #B8F0D8;
+    --cream: #FFF8F0;
+    --peach: #FFD4B8;
+    --soft-yellow: #FFF3B8;
+    --dark: #2D1B3D;
+    --mid: #5A3D6E;
+  }
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <link rel="stylesheet" href="./style.css" />
+  body {
+  background-color: var(--cream);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  color: var(--dark);
+  overflow-x: hidden;
+  cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><text y='20' font-size='20'>🌸</text></svg>"), auto;
+}
 
-    <title>Raksha</title>
-  </head>
-  <body id="home" class="bg-lightBg font-body dark:bg-darkBg dark:text-white">
-    <nav
-      class="sticky top-0 z-10 w-full border-b border-gray-200 bg-accent dark:border-gray-600 dark:bg-darkBg"
-    >
-      <div
-        class="mx-auto flex flex-wrap items-center justify-between p-4 lg:px-20"
-      >
-        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <!--logo img-->
-          <span
-            class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
-            >Portfolio</span
-          >
-        </a>
-        <div
-          class="flex items-center space-x-4 md:order-2 md:space-x-10 rtl:space-x-reverse"
-        >
-          <a
-            href="https://github.com/Raksha-Karn"
-            target="_blank"
-            class="dark:text-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 256 256"
-              class="size-8"
-            >
-              <path
-                fill="currentColor"
-                d="M216 104v8a56.06 56.06 0 0 1-48.44 55.47A39.8 39.8 0 0 1 176 192v40a8 8 0 0 1-8 8h-64a8 8 0 0 1-8-8v-16H72a40 40 0 0 1-40-40a24 24 0 0 0-24-24a8 8 0 0 1 0-16a40 40 0 0 1 40 40a24 24 0 0 0 24 24h24v-8a39.8 39.8 0 0 1 8.44-24.53A56.06 56.06 0 0 1 56 112v-8a58.14 58.14 0 0 1 7.69-28.32A59.78 59.78 0 0 1 69.07 28A8 8 0 0 1 76 24a59.75 59.75 0 0 1 48 24h24a59.75 59.75 0 0 1 48-24a8 8 0 0 1 6.93 4a59.74 59.74 0 0 1 5.37 47.68A58 58 0 0 1 216 104"
-              />
-            </svg>
-          </a>
-          <button id="theme-toggle" type="button" class="dark:text-white">
-            <svg
-              id="theme-toggle-dark-icon"
-              class="sun size-8"
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M12 21q-3.75 0-6.375-2.625T3 12t2.625-6.375T12 3q.35 0 .688.025t.662.075q-1.025.725-1.638 1.888T11.1 7.5q0 2.25 1.575 3.825T16.5 12.9q1.375 0 2.525-.613T20.9 10.65q.05.325.075.662T21 12q0 3.75-2.625 6.375T12 21"
-              />
-            </svg>
+.pixel-font {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
 
-            <svg
-              id="theme-toggle-light-icon"
-              class="moon size-8"
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="m6.05 4.14l-.39-.39a.993.993 0 0 0-1.4 0l-.01.01a.984.984 0 0 0 0 1.4l.39.39c.39.39 1.01.39 1.4 0l.01-.01a.984.984 0 0 0 0-1.4M3.01 10.5H1.99c-.55 0-.99.44-.99.99v.01c0 .55.44.99.99.99H3c.56.01 1-.43 1-.98v-.01c0-.56-.44-1-.99-1m9-9.95H12c-.56 0-1 .44-1 .99v.96c0 .55.44.99.99.99H12c.56.01 1-.43 1-.98v-.97c0-.55-.44-.99-.99-.99m7.74 3.21c-.39-.39-1.02-.39-1.41-.01l-.39.39a.984.984 0 0 0 0 1.4l.01.01c.39.39 1.02.39 1.4 0l.39-.39a.984.984 0 0 0 0-1.4m-1.81 15.1l.39.39a.996.996 0 1 0 1.41-1.41l-.39-.39a.993.993 0 0 0-1.4 0c-.4.4-.4 1.02-.01 1.41M20 11.49v.01c0 .55.44.99.99.99H22c.55 0 .99-.44.99-.99v-.01c0-.55-.44-.99-.99-.99h-1.01c-.55 0-.99.44-.99.99M12 5.5c-3.31 0-6 2.69-6 6s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6m-.01 16.95H12c.55 0 .99-.44.99-.99v-.96c0-.55-.44-.99-.99-.99h-.01c-.55 0-.99.44-.99.99v.96c0 .55.44.99.99.99m-7.74-3.21c.39.39 1.02.39 1.41 0l.39-.39a.993.993 0 0 0 0-1.4l-.01-.01a.996.996 0 0 0-1.41 0l-.39.39c-.38.4-.38 1.02.01 1.41"
-              />
-            </svg>
-          </button>
-          <button
-            data-collapse-toggle="navbar-sticky"
-            type="button"
-            class="md:hidden lg:hidden"
-            aria-controls="navbar-sticky"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24
-              "
-              class="size-8"
-            >
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-width="1.5"
-                d="M4 7h3m13 0h-9m9 10h-3M4 17h9m-9-5h16"
-              />
-            </svg>
-          </button>
-        </div>
-        <div
-          class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
-          id="navbar-sticky"
-        >
-          <ul
-            class="mt-4 flex flex-col rounded-lg border border-gray-100 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse"
-          >
-            <a
-              href="#home"
-              class="nav-link flex items-center rounded-sm bg-[#ffafcc] text-gray-900 duration-300 hover:bg-vibrant dark:border-gray-700 dark:text-white md:p-0"
-              data-target="home"
-              aria-current="page"
-              ><button class="px-4 py-2">Home</button></a
-            >
-            <a
-              href="#projects"
-              class="nav-link flex items-center rounded-sm text-gray-900 duration-300 hover:bg-vibrant dark:border-gray-700 dark:text-white md:p-0"
-              data-target="projects"
-              aria-current="page"
-              ><button class="px-4 py-2">Projects</button></a
-            >
-            <a
-              href="#about"
-              class="nav-link flex items-center rounded-sm text-gray-900 duration-300 hover:bg-vibrant dark:border-gray-700 dark:text-white md:p-0"
-              data-target="about"
-              aria-current="page"
-              ><button class="px-4 py-2">About Me</button></a
-            >
+.vt-font {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
 
-            <a
-              href="#contact"
-              class="nav-link flex items-center rounded-sm text-gray-900 duration-300 hover:bg-vibrant dark:border-gray-700 dark:text-white md:p-0"
-              data-target="contact"
-              aria-current="page"
-              ><button class="px-4 py-2">Contact</button></a
-            >
-          </ul>
-        </div>
+.nav-link {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.pixel-btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.skill-tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.toast {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.terminal {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.terminal-header {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+}
+
+.text-2xl-vt {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+.fw-700 { font-weight: 700; }
+
+h1, h2, h3, .pixel-font {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.vt-font, p {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.silkscreen-font { 
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hero-title {
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.project-card p,
+.skill-category p,
+#contact p,
+#projects > div > p,
+#skills > div > p {
+  font-weight: 400;
+}
+
+.project-card h3,
+.skill-category h3 {
+  font-weight: 700;
+}
+
+footer .pixel-font {
+  font-weight: 700;
+}
+
+footer .vt-font {
+  font-weight: 400;
+}
+
+.skip-to-main {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+}
+
+  .pixel-font { font-family: 'Space Grotesk', sans-serif; font-weight: 700; }
+  .vt-font { font-family: 'DM Sans', sans-serif; }
+
+  /* Pixel border utility */
+  .pixel-border {
+    border: 4px solid var(--dark);
+    box-shadow:
+      4px 4px 0 var(--dark),
+      inset -2px -2px 0 rgba(0,0,0,0.1);
+  }
+
+  .pixel-border-pink {
+    border: 4px solid var(--hot-pink);
+    box-shadow: 4px 4px 0 var(--hot-pink);
+  }
+
+  .pixel-border-lavender {
+    border: 4px solid var(--lavender);
+    box-shadow: 4px 4px 0 var(--lavender);
+  }
+
+  /* Pixel girl animation */
+  .pixel-girl {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+
+  /* Blink animation */
+  @keyframes blink {
+    0%, 90%, 100% { opacity: 1; }
+    95% { opacity: 0; }
+  }
+
+  /* Float animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  /* Bounce small */
+  @keyframes bounce-small {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  /* Sparkle spin */
+  @keyframes sparkle {
+    0% { transform: scale(0) rotate(0deg); opacity: 0; }
+    50% { transform: scale(1) rotate(180deg); opacity: 1; }
+    100% { transform: scale(0) rotate(360deg); opacity: 0; }
+  }
+
+  /* Typing cursor */
+  @keyframes type-cursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  /* Heart float */
+  @keyframes heart-float {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-80px) scale(0.5); opacity: 0; }
+  }
+
+  /* Wiggle */
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+  }
+
+  /* Slide up */
+  @keyframes slide-up {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  /* Star twinkle */
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+  }
+
+  /* Walking */
+  @keyframes walk {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(6px); }
+  }
+
+  /* Scroll indicator */
+  @keyframes scroll-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+
+  .animate-float { animation: float 3s ease-in-out infinite; }
+  .animate-bounce-small { animation: bounce-small 2s ease-in-out infinite; }
+  .animate-wiggle { animation: wiggle 1s ease-in-out infinite; }
+  .animate-slide-up { animation: slide-up 0.6s ease-out forwards; }
+  .animate-twinkle { animation: twinkle 2s ease-in-out infinite; }
+  .animate-scroll { animation: scroll-bounce 1.5s ease-in-out infinite; }
+  .animate-walk { animation: walk 0.6s ease-in-out infinite; }
+
+  .delay-1 { animation-delay: 0.2s; }
+  .delay-2 { animation-delay: 0.4s; }
+  .delay-3 { animation-delay: 0.6s; }
+  .delay-4 { animation-delay: 0.8s; }
+  .delay-5 { animation-delay: 1.0s; }
+
+  /* Section reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Pixel button */
+  .pixel-btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--hot-pink);
+    color: white;
+    /* font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700; */
+    border: 4px solid var(--dark);
+    box-shadow: 4px 4px 0 var(--dark);
+    cursor: pointer;
+    transition: all 0.1s;
+    text-decoration: none;
+  }
+  .pixel-btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--dark);
+  }
+  .pixel-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 var(--dark);
+  }
+
+  .pixel-btn-secondary {
+    background: var(--lavender);
+    color: var(--dark);
+  }
+
+  /* Skill tag */
+  .skill-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: white;
+    border: 3px solid var(--dark);
+    box-shadow: 3px 3px 0 var(--dark);
+    /* font-family: 'DM Sans', sans-serif; */
+    /* font-size: 16px;
+    font-weight: 500; */
+    transition: all 0.15s;
+    cursor: default;
+  }
+  .skill-tag:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--dark);
+  }
+
+  /* Project card */
+  .project-card {
+    background: white;
+    border: 4px solid var(--dark);
+    box-shadow: 6px 6px 0 var(--dark);
+    transition: all 0.15s;
+    overflow: hidden;
+  }
+  .project-card:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0 var(--dark);
+  }
+
+  /* Floating elements container */
+  .floating-elements {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .floating-star {
+    position: absolute;
+    /* font-size: 16px; */
+    animation: twinkle 2s ease-in-out infinite;
+  }
+
+  /* Nav */
+  .nav-link {
+    position: relative;
+    /* font-family: 'Space Grotesk', sans-serif; */
+    /* font-size: 11px;
+    font-weight: 600; */
+    color: var(--dark);
+    text-decoration: none;
+    padding: 4px 0;
+    transition: color 0.2s;
+  }
+  .nav-link:hover { color: var(--hot-pink); }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--hot-pink);
+    transition: width 0.2s;
+  }
+  .nav-link:hover::after { width: 100%; }
+
+  /* Toast notification */
+  .toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--dark);
+    color: white;
+    padding: 14px 28px;
+    /* font-family: 'DM Sans', sans-serif;
+    font-size: 18px; */
+    border: 3px solid var(--hot-pink);
+    box-shadow: 4px 4px 0 var(--hot-pink);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+  .toast.show {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 12px; }
+  ::-webkit-scrollbar-track { background: var(--cream); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--pink);
+    border: 2px solid var(--dark);
+  }
+
+  /* Pixel art divider */
+  .pixel-divider {
+    height: 4px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--pink) 0px, var(--pink) 8px,
+      transparent 8px, transparent 12px
+    );
+    border: none;
+    margin: 0;
+  }
+
+  /* Status indicator */
+  .status-dot {
+    width: 10px;
+    height: 10px;
+    background: #7DFF8C;
+    border: 2px solid var(--dark);
+    display: inline-block;
+    animation: twinkle 1.5s ease-in-out infinite;
+  }
+
+  /* Terminal style */
+  .terminal {
+    background: var(--dark);
+    color: var(--mint);
+    border: 4px solid var(--dark);
+    box-shadow: 6px 6px 0 rgba(45,27,61,0.3);
+    /* font-family: 'DM Sans', sans-serif;
+    font-size: 18px; */
+    padding: 20px;
+    line-height: 1.8;
+  }
+  .terminal-header {
+    background: var(--mid);
+    padding: 8px 12px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    /* font-family: 'DM Sans', sans-serif; */
+  }
+  .terminal-dot {
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--dark);
+  }
+
+  @media (max-width: 768px) {
+    .pixel-font { font-size: 10px !important; }
+    .hero-title { font-size: 18px !important; }
+    .nav-link { font-size: 14px; }
+  }
+
+  /* Reusable utility classes */
+  .white-card {
+    background: white;
+    border: 4px solid var(--dark);
+    box-shadow: 6px 6px 0 var(--dark);
+  }
+  .white-card:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0 var(--dark);
+  }
+  .skill-category {
+    background: white;
+    border: 4px solid var(--dark);
+    box-shadow: 6px 6px 0 var(--dark);
+    padding: 24px;
+  }
+  .inline-flex-centered {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 2px;
+  }
+  .social-icon-box {
+    width: 56px;
+    height: 56px;
+    background: white;
+    border: 3px solid var(--dark);
+    box-shadow: 3px 3px 0 var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: transform;
+    transition-duration: 150ms;
+  }
+  .social-icon-box:hover {
+    transform: scale(1.1);
+  }
+  .text-2xl-vt { font-family: 'DM Sans', sans-serif; font-size: 20px; }
+  .text-mid { color: var(--mid); }
+  .text-dark { color: var(--dark); }
+  .text-hot-pink { color: var(--hot-pink); }
+  .text-pink { color: var(--pink); }
+  
+  /* Font weight utilities */
+  .fw-400 { font-weight: 400; }
+  .fw-500 { font-weight: 500; }
+  .fw-700 { font-weight: 700; }
+  
+  /* Heading font weights */
+  /* h1, h2, h3, .pixel-font {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  } */
+  
+  /* Description/body font weight */
+  /* .vt-font, p {
+    font-weight: 400;
+    line-height: 1.6;
+  } */
+  
+  /* Silkscreen accent font */
+  /* .silkscreen-font { 
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 14px;
+  } */
+  
+  /* SEO-friendly responsive improvements */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  
+  /* Link focus for accessibility */
+  a:focus {
+    outline: 3px solid var(--hot-pink);
+    outline-offset: 2px;
+  }
+  
+  /* Skip to main content link (hidden but accessible) */
+  .skip-to-main {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--hot-pink);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+    /* font-family: 'DM Sans', sans-serif; */
+  }
+  .skip-to-main:focus {
+    top: 0;
+  }
+
+  /* ─── Final Font System Fix ─── */
+html,
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
+
+.pixel-font,
+h1,
+h2,
+h3,
+.hero-title,
+.project-card h3,
+.skill-category h3,
+footer .pixel-font {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.hero-title {
+  letter-spacing: -0.04em;
+}
+
+.vt-font,
+p,
+.text-2xl-vt,
+.project-card p,
+#projects > div > p,
+#skills > div > p,
+#contact p,
+footer .vt-font {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.nav-link,
+.pixel-btn,
+.skill-tag,
+.terminal-header,
+#typingText,
+.silkscreen-font {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+.pixel-btn {
+  font-size: 15px;
+}
+
+.skill-tag {
+  font-size: 14px;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.project-card p {
+  font-size: 17px;
+}
+
+.terminal,
+.toast,
+.skip-to-main {
+  font-family: 'DM Sans', sans-serif;
+}
+
+#about .terminal,
+#about .terminal p,
+#about .terminal .terminal-header,
+#about .terminal #typingText {
+  font-family: 'VT323', monospace;
+  letter-spacing: 0.02em;
+}
+
+#about .terminal .terminal-header {
+  font-size: 18px;
+}
+
+#about .terminal p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.toast,
+.skip-to-main {
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<!-- Skip to main content link for accessibility -->
+<a href="#home" class="skip-to-main">Skip to main content</a>
+
+<!-- Floating decorative elements -->
+<div class="floating-elements" id="floatingElements"></div>
+
+<!-- Toast -->
+<div class="toast" id="toast">✨ copied to clipboard!</div>
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50" style="background: var(--cream); border-bottom: 4px solid var(--dark);" role="navigation" aria-label="Main navigation">
+  <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#home" class="pixel-font text-sm flex items-center gap-2" style="color: var(--hot-pink); text-decoration: none;" aria-label="Raksha Karn - Software Developer">
+      <span style="font-size: 20px;">🌸</span>
+      raksha.py
+    </a>
+    <div class="flex items-center gap-6">
+      <a href="#about" class="nav-link hidden md:inline">about</a>
+      <a href="#projects" class="nav-link hidden md:inline">projects</a>
+      <a href="#skills" class="nav-link hidden md:inline">skills</a>
+      <a href="#contact" class="nav-link hidden md:inline">contact</a>
+      <span class="status-dot" aria-label="Available for work"></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center justify-center pt-20 px-6 relative" id="home">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    
+    <!-- Pixel Girl Avatar -->
+    <div class="relative flex-shrink-0">
+      <canvas id="pixelGirl" width="160" height="200" class="pixel-girl animate-float" style="width: 240px; height: 300px;" aria-label="Pixel art avatar"></canvas>
+      <!-- Floating hearts around avatar -->
+      <span style="position:absolute; top:10px; right:-10px; font-size:20px; animation: heart-float 2s ease-out infinite;" aria-hidden="true">💕</span>
+      <span style="position:absolute; top:40px; left:-20px; font-size:14px; animation: heart-float 2.5s ease-out infinite 0.5s;" aria-hidden="true">✨</span>
+      <span style="position:absolute; bottom:30px; right:-15px; font-size:16px; animation: heart-float 3s ease-out infinite 1s;" aria-hidden="true">⭐</span>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="text-center md:text-left">
+      <div class="flex items-center gap-3 justify-center md:justify-start mb-4">
+        <span class="status-dot"></span>
+        <span class="vt-font text-xl text-mid">available for work</span>
       </div>
-    </nav>
-
-    <main
-      class="-mt-10 flex h-screen flex-col items-center justify-center gap-8 p-4 font-bold lg:flex-row lg:gap-0 lg:px-20"
-    >
-      <div class="order-2 space-y-3 lg:order-1 lg:w-1/2 lg:space-y-8">
-        <h1 class="font-heading text-2xl font-bold lg:text-5xl">
-          Hello, I am <span class="text-vibrant">Raksha Karn</span>.
-        </h1>
-        <p class="lg:text-lg">
-          I'm a <span class="text-vibrant">Full Stack Developer</span> and
-          I love to learn and build cool applications. Currently, I'm learning data science and machine learning using <span class="text-vibrant">Python.</span>
-        </p>
-        <div class="flex flex-col gap-4 lg:flex-row lg:items-center">
-          <button
-            class="rounded-sm border-2 border-vibrant px-4 py-2 text-lg duration-500 hover:bg-accent projects-button"
-          >
-            View Projects
-          </button>
-          <button
-            class="rounded-sm bg-vibrant px-4 py-2 text-lg duration-500 hover:bg-accent"
-          >
-            <a
-              href="/files/Raksha-Resume.pdf"
-              download="Raksha-Resume.pdf"
-              >Download CV</a
-            >
-          </button>
-        </div>
-      </div>
-      <div class="flex justify-end lg:order-2 lg:w-1/2">
-        <img
-          class="hidden w-[250px] dark:block lg:w-[380px]"
-          src="/hero.svg"
-          alt=""
-        />
-        <img
-          class="w-[250px] dark:hidden lg:w-[380px]"
-          src="/darkhero.svg"
-          alt=""
-        />
-      </div>
-    </main>
-    <section class="min-h-screen p-4 lg:px-20" id="projects">
-      <h1
-        class="mb-6 font-heading text-3xl font-bold dark:text-vibrant lg:mb-10 lg:text-5xl"
-      >
-        Projects
-      </h1>
-      <div class="mb-6 flex flex-col gap-8 lg:mb-10 lg:gap-16">
-        <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-20">
-          <div class="lg:w-1/2">
-            <img
-              src="./images/kec.jpeg"
-              alt="KEC Hackfest 2025"
-            />
-          </div>
-          <div class="flex flex-col space-y-2 lg:w-1/2 lg:space-y-4">
-            <h1 class="font-heading text-2xl font-bold lg:text-3xl">
-              Nirbhaya - KEC Hackfest 2025
-            </h1>
-            <p class="lg:text-lg">
-              A fully-offline based women safety and security app for any emergency situation.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/Raksha-Karn/KEC-Hackfest-2025"
-            >
-              <button
-                class="rounded-sm border-2 border-vibrant px-4 py-2 text-lg font-bold duration-500 hover:bg-accent"
-              >
-                View Code
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-20">
-          <div class="lg:order-1 lg:w-1/2">
-            <img
-              src="./images/cmc.png"
-              alt="Coin Market Cap Scraper"
-            />
-          </div>
-          <div class="flex flex-col space-y-2 lg:w-1/2 lg:space-y-4">
-            <h1 class="font-heading text-2xl font-bold lg:text-3xl">
-              CoinMarketCap Scraper
-            </h1>
-            <p class="lg:text-lg">
-              A Scrapy-based web scraper which scrapes cryptocurrency data from the website every 5 minutes and upserts in Supabase.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/Raksha-Karn/CoinMarketCap-Scraper"
-            >
-              <button
-                class="rounded-sm border-2 border-vibrant px-4 py-2 text-lg font-bold duration-500 hover:bg-accent"
-              >
-                View Code
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-20">
-          <div class="lg:w-1/2">
-            <img
-              src="./images/story.jpg"
-              alt="Scary Story Generator"
-            />
-          </div>
-          <div class="flex flex-col space-y-2 lg:w-1/2 lg:space-y-4">
-            <h1 class="font-heading text-2xl font-bold lg:text-3xl">
-              Scary Story Generator
-            </h1>
-            <p class="lg:text-lg">
-              A Python-based application which takes a Reddit post containing a scary story, and converts it into a spooky audio experience with sound effects.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/Raksha-Karn/Scary-Story-Generator"
-            >
-              <button
-                class="rounded-sm border-2 border-vibrant px-4 py-2 text-lg font-bold duration-500 hover:bg-accent"
-              >
-                View Code
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-20">
-          <div class="lg:order-1 lg:w-1/2">
-            <img
-              src="./images/ollama.png"
-              alt="Github Profile Roaster"
-            />
-          </div>
-          <div class="flex flex-col space-y-2 lg:w-1/2 lg:space-y-4">
-            <h1 class="font-heading text-2xl font-bold lg:text-3xl">
-              GitHub Profile Roaster
-            </h1>
-            <p class="lg:text-lg">
-              A Python-based application which makes use of GitHub API to scrape user profile data and generate a roast using Ollama Gemma model.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/Raksha-Karn/Github-Profile-Roaster"
-            >
-              <button
-                class="rounded-sm border-2 border-vibrant px-4 py-2 text-lg font-bold duration-500 hover:bg-accent"
-              >
-                View Code
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-20">
-          <div class="lg:w-1/2">
-            <img
-              src="./images/ai.png"
-              alt="AI Calculator"
-            />
-          </div>
-          <div class="flex flex-col space-y-2 lg:w-1/2 lg:space-y-4">
-            <h1 class="font-heading text-2xl font-bold lg:text-3xl">
-              AI Calculator
-            </h1>
-            <p class="lg:text-lg">
-              A React-based web application which uses Gemini API to calculate results from figures drawn on canvas.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/Raksha-Karn/AI-Calc-Frontend"
-            >
-              <button
-                class="rounded-sm border-2 border-vibrant px-4 py-2 text-lg font-bold duration-500 hover:bg-accent"
-              >
-                View Code
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="min-h-[55vh] p-4 lg:px-20" id="about">
-      <div class="flex items-center justify-between">
-        <h1
-          class="mb-6 font-heading text-3xl font-bold dark:text-vibrant lg:mb-10 lg:text-5xl"
-        >
-          About Me
-        </h1>
-        <h1
-          class="mb-6 hidden font-heading text-3xl font-bold dark:text-vibrant lg:mb-10 lg:block lg:text-5xl"
-        >
-          My Skills
-        </h1>
-      </div>
-
-      <div class="flex flex-col items-center lg:flex-row">
-        <div class="space-y-4 lg:w-1/2 lg:text-xl">
-          <p>
-            Raksha, here. I am a full stack software developer.<p></p>
-            I specialize in Python and I love to create web applications using Flask and FastAPI.
-            I am also proficient in scraping websites and creating APIs.
-          </p>
-          
-        </div>
-
-        <h1
-          class="mb-6 pb-4 pt-10 font-heading text-3xl font-bold dark:text-vibrant lg:mb-10 lg:hidden lg:text-5xl"
-        >
-          My Skills
-        </h1>
-
-        <div
-          class="flex flex-col items-center gap-5 space-y-8 text-4xl dark:text-accent lg:w-1/2 lg:items-end lg:space-y-10 lg:text-6xl"
-        >
-          <div class="flex space-x-6 lg:space-x-12">
-            <i class="devicon-html5-plain"></i>
-
-            <i class="devicon-css3-plain"></i>
-
-            <i class="devicon-tailwindcss-original"></i>
-
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-react-original"></i>
-          </div>
-
-          <div class="flex space-x-6 lg:space-x-12">
-            <i class="devicon-python-plain"></i>
-            <i class="devicon-selenium-original"></i>
-
-            <i class="devicon-django-plain"></i>
-
-            <i class="devicon-mongodb-plain"></i>
-
-            <i class="devicon-postgresql-plain"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="p-4 lg:px-20" id="contact">
-      <h1
-        class="mb-6 font-heading text-3xl font-bold dark:text-vibrant lg:mb-10 lg:text-5xl"
-      >
-        Contact
-      </h1>
-
-      <div
-        class="mx-auto flex w-full max-w-6xl flex-col rounded-sm lg:flex-row"
-      >
+      <h1 class="pixel-font hero-title text-2xl md:text-3xl leading-relaxed mb-6 text-dark">
+        hi, i'm <span style="color: var(--hot-pink);">raksha</span><br>
         
-        <div>
-          <span>Gmail: </span>
-          <a href="mailto:rakshakarn07@gmail.com" class="text-accent">rakshakarn07@gmail.com</a>
-          <br>
-          
+      </h1>
+      <p class="vt-font text-2xl md:text-3xl mb-8 leading-relaxed text-mid fw-400">
+        i am a software developer who loves making 
+        <span style="color: var(--hot-pink); font-weight: 600;">pretty things</span> 
+        that actually work~ ♪
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+        <a href="#projects" class="pixel-btn">see my work ✦</a>
+        <a href="#contact" class="pixel-btn pixel-btn-secondary">say hello ♡</a>
+      </div>
+
+      <!-- Experience Stats -->
+      <div class="flex gap-8 mt-10 justify-center md:justify-start">
+        <div class="text-center">
+          <div class="pixel-font text-2xl text-hot-pink">3+</div>
+          <div class="vt-font text-lg text-mid">years exp</div>
+        </div>
+        <div class="text-center">
+          <div class="pixel-font text-2xl" style="color: var(--lavender);">50+</div>
+          <div class="vt-font text-lg text-mid">projects</div>
+        </div>
+        <div class="text-center">
+          <div class="pixel-font text-2xl" style="color: var(--mint);">∞</div>
+          <div class="vt-font text-lg text-mid">cuddles</div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <footer
-      class="flex select-none items-center justify-between bg-vibrant p-4 lg:px-20"
-    >
-      <span class="font-heading text-2xl font-bold lg:text-4xl">Raksha</span>
-      <ul class="flex items-center gap-8 text-3xl lg:gap-12">
-        <a href="https://github.com/Raksha-Karn" target="_blank">
-          <i class="devicon-github-original"></i>
-        </a>
+<!-- Pixel Divider -->
+<hr class="pixel-divider max-w-5xl mx-auto">
 
-      </ul>
-    </footer>
-  </body>
+<!-- About Section -->
+<section id="about" class="py-24 px-6">
+  <div class="max-w-3xl mx-auto reveal">
+    <h2 class="pixel-font text-lg text-center mb-10 text-dark">
+      <span style="color: var(--hot-pink);">~</span> about me <span style="color: var(--hot-pink);">~</span>
+    </h2>
+    
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="terminal-dot" style="background: #FF6B6B;"></div>
+        <div class="terminal-dot" style="background: var(--soft-yellow);"></div>
+        <div class="terminal-dot" style="background: #7DFF8C;"></div>
+        <span class="vt-font text-sm ml-2" style="color: rgba(255,255,255,0.5);">raksha@portfolio ~ %</span>
+      </div>
+      <div class="mt-2">
+        <p><span style="color: var(--hot-pink);">$</span> cat about.txt</p>
+        <p style="color: var(--cream);">─────────────────────────────────</p>
+        <p>hello! i'm raksha, a <span style="color: var(--soft-yellow);">software developer</span></p>
+        <p>based in Nepal 🌸</p>
+        <p></p>
+        <p>i specialize in building <span style="color: var(--pink);">backend and AI/ML applications with Python</span></p>
+        <p></p>
+        <p>when i'm not coding you can find me:</p>
+        <p>  🥐 cafe hopping</p>
+        <p>  📗 reading my favourite book</p>
+        <p>  ☕  drinking way too much tea</p>
+        <p>  💤 definitely sleeping if none of the above</p>
+        <p style="color: var(--cream);">─────────────────────────────────</p>
+        <p><span style="color: var(--hot-pink);">$</span> <span id="typingText" style="border-right: 3px solid var(--mint); animation: type-cursor 0.8s infinite; padding-right: 2px;"></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="pixel-divider max-w-5xl mx-auto">
+
+<!-- Projects Section -->
+<section id="projects" class="py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="pixel-font text-lg text-center mb-4 reveal text-dark">
+      <span style="color: var(--lavender);">★</span> my projects <span style="color: var(--lavender);">★</span>
+    </h2>
+    <p class="vt-font text-2xl text-center mb-12 reveal text-mid fw-400">things i've built with love~</p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Project 1: Threshold -->
+      <article class="project-card reveal">
+        <div style="background: var(--peach); height: 180px; display: flex; align-items: center; justify-content: center; border-bottom: 4px solid var(--dark); position: relative; overflow: hidden;">
+          <div style="font-size: 60px; image-rendering: pixelated;" class="animate-bounce-small" aria-hidden="true">🤖</div>
+          <div class="silkscreen-font" style="position: absolute; top: 8px; right: 8px; background: var(--hot-pink); color: white; padding: 4px 10px; font-size: 11px; border: 2px solid var(--dark);">featured</div>
+        </div>
+        <div class="p-6">
+          <div class="inline-flex-centered">
+            <span class="vt-font text-lg text-hot-pink">♥</span>
+            <h3 class="pixel-font text-dark">Threshold</h3>
+          </div>
+          <br><br>
+        <p class="vt-font mb-4 text-mid fw-400">Multi-agent fraud detection ML system with dual path OTP verification.</p>
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Pytorch</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Scikit-learn</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Pandas</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Numpy</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Redis</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Fastapi</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Kafka</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Neo4j</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Twilio</span>
+          <div class="flex gap-3">
+            
+            <a href="https://github.com/Raksha-Karn/Threshold" class="pixel-btn" style="padding: 10px 18px;">view →</a>
+            <a href="https://github.com/Raksha-Karn/Threshold" class="pixel-btn pixel-btn-secondary" style="padding: 10px 18px;">code ♡</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Classify -->
+      <article class="project-card reveal delay-1">
+        <div style="background: var(--mint); height: 180px; display: flex; align-items: center; justify-content: center; border-bottom: 4px solid var(--dark);">
+          <div style="font-size: 60px;" class="animate-float delay-2" aria-hidden="true">📔</div>
+        </div>
+        <div class="p-6">
+          <div class="inline-flex-centered">
+            <span class="vt-font text-lg text-hot-pink">♥</span>
+            <h3 class="pixel-font text-dark">Classify</h3>
+            
+          </div>
+          <br><br>
+          <p class="vt-font mb-4 text-mid fw-400">FastAPI Student Management API with JWT authentication and role-based access control.</p>
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Fastapi</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">JWT</span>
+          </div>
+          <br><br>
+          <div class="flex gap-3">
+            <a href="https://classify-4oqk.onrender.com/" class="pixel-btn" style="padding: 10px 18px;">view →</a>
+            <a href="https://github.com/Raksha-Karn/Classify" class="pixel-btn pixel-btn-secondary" style="padding: 10px 18px;">code ♡</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: MenuCraft -->
+      <article class="project-card reveal delay-2">
+        <div style="background: var(--soft-yellow); height: 180px; display: flex; align-items: center; justify-content: center; border-bottom: 4px solid var(--dark);">
+          <div style="font-size: 60px;" class="animate-wiggle" aria-hidden="true">🍜</div>
+        </div>
+        <div class="p-6">
+          <div class="inline-flex-centered">
+            <span class="vt-font text-lg text-hot-pink">♥</span>
+            <h3 class="pixel-font text-dark">MenuCraft</h3>
+          </div>
+          <br><br>
+          <p class="vt-font mb-4 text-mid fw-400">Django REST Framework API enabling restaurants to create custom digital menus and dynamic QR codes.</p>
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">DRF</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Django</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">PostgreSQL</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Pillow</span>
+
+          </div>
+          <div class="flex gap-3">
+            <a href="https://github.com/Raksha-Karn/MenuCraft" class="pixel-btn" style="padding: 10px 18px;">view →</a>
+            <a href="https://github.com/Raksha-Karn/MenuCraft" class="pixel-btn pixel-btn-secondary" style="padding: 10px 18px;">code ♡</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4: Chirpie -->
+      <article class="project-card reveal delay-3">
+        <div style="background: #E8D5FF; height: 180px; display: flex; align-items: center; justify-content: center; border-bottom: 4px solid var(--dark);">
+          <div style="font-size: 60px;" class="animate-bounce-small delay-3" aria-hidden="true">💬</div>
+        </div>
+        <div class="p-6">
+          <div class="inline-flex-centered">
+            <span class="vt-font text-lg text-hot-pink">♥</span>
+            <h3 class="pixel-font text-dark">Chirpie</h3>
+          </div>
+          <br><br>
+
+          <p class="vt-font mb-4 text-mid">Real-time group chat application with AI assistant using Django, WebSockets, and Google Gemini API.</p>
+          <div class="flex flex-wrap gap-3 mb-4">
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Django</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Websockets</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">PostgreSQL</span>
+            <span class="skill-tag" style="font-size: 16px; padding: 4px 10px; border-width: 2px; box-shadow: 2px 2px 0 var(--dark);">Gemini</span>
+
+          </div>
+          <div class="flex gap-3">
+            <a href="https://github.com/Raksha-Karn/Chirpie-AIGroupChat" class="pixel-btn" style="padding: 10px 18px;">view →</a>
+            <a href="https://github.com/Raksha-Karn/Chirpie-AIGroupChat" class="pixel-btn pixel-btn-secondary" style="padding: 10px 18px;">code ♡</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="pixel-divider max-w-5xl mx-auto">
+
+<!-- Skills Section -->
+<section id="skills" class="py-24 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="pixel-font text-lg text-center mb-4 reveal text-dark">
+      <span style="color: var(--pink);">♥</span> skills & tools <span style="color: var(--pink);">♥</span>
+    </h2>
+    <p class="vt-font text-2xl text-center mb-12 reveal text-mid fw-400">my magical toolbelt~</p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- AI/ML Skills -->
+      <div class="reveal skill-category">
+        <div class="text-center mb-6">
+          <span style="font-size: 36px;" aria-hidden="true">🎨</span>
+          <h2 class="pixel-font text-xl text-hot-pink mt-2">AI/ML</h2>
+        </div>
+        <div class="flex flex-wrap gap-2 justify-center">
+          <span class="skill-tag">Pytorch</span>
+          <span class="skill-tag">Numpy</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Tensorflow</span>
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+
+      <!-- Backend Skills -->
+      <div class="reveal delay-1 skill-category">
+        <div class="text-center mb-6">
+          <span style="font-size: 36px;" aria-hidden="true">⚙️</span>
+          <h2 class="pixel-font text-xl mt-2" style="color: var(--lavender);">Backend</h2>
+        </div>
+        <div class="flex flex-wrap gap-2 justify-center">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Fastapi</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">Supabase</span>
+        </div>
+      </div>
+
+      <!-- Web Scraping Skills -->
+      <div class="reveal delay-2 skill-category">
+        <div class="text-center mb-6">
+          <span style="font-size: 36px;" aria-hidden="true">✨</span>
+          <h2 class="pixel-font text-xl mt-2" style="color: var(--mint);">Web Scraping</h2>
+        </div>
+        <div class="flex flex-wrap gap-2 justify-center">
+          <span class="skill-tag">Scrapy</span>
+          <span class="skill-tag">Selenium</span>
+          <span class="skill-tag">Cheerio</span>
+          <span class="skill-tag">Playwright</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="pixel-divider max-w-5xl mx-auto">
+
+<!-- Contact Section -->
+<section id="contact" class="py-24 px-6">
+  <div class="max-w-2xl mx-auto text-center reveal">
+    <span style="font-size: 48px;" class="animate-bounce-small inline-block" aria-hidden="true">💌</span>
+    <h2 class="pixel-font text-lg mt-4 mb-4 text-dark">
+      let's be friends~ <span style="color: var(--hot-pink);">♥</span>
+    </h2>
+    <p class="vt-font text-2xl mb-10 text-mid fw-400">
+      got a fun project? want to say hi?<br>
+      i'd love to hear from you!
+    </p>
+
+    <!-- Email copy box -->
+    <div class="inline-flex items-center gap-3 mb-10 px-6 py-4" style="background: white; border: 4px solid var(--dark); box-shadow: 4px 4px 0 var(--dark); cursor: pointer;" onclick="copyEmail()" onkeydown="event.key === 'Enter' && copyEmail()" role="button" tabindex="0" aria-label="Copy email to clipboard: rakshakarn07@gmail.com">
+      <span style="font-size: 20px;" aria-hidden="true">📧</span>
+      <span class="vt-font text-lg text-dark" id="emailText">rakshakarn07@gmail.com</span>
+      <span class="pixel-font text-xs text-hot-pink">click to copy!</span>
+    </div>
+
+    <!-- Social media links -->
+    <div class="flex justify-center gap-6 mt-8">
+      <a href="https://github.com/Raksha-Karn" class="flex flex-col items-center gap-2 group" style="text-decoration: none;" aria-label="Visit Raksha's GitHub profile">
+        <div class="social-icon-box">
+          <span class="iconify" data-icon="mdi:github" style="font-size: 28px; color: var(--dark);" aria-hidden="true"></span>
+        </div>
+        <span class="vt-font text-lg text-mid">github</span>
+      </a>
+      <a href="https://www.linkedin.com/in/raksha-dddd" class="flex flex-col items-center gap-2 group" style="text-decoration: none;" aria-label="Visit Raksha's LinkedIn profile">
+        <div class="social-icon-box">
+          <span class="iconify" data-icon="mdi:linkedin" style="font-size: 28px; color: var(--dark);" aria-hidden="true"></span>
+        </div>
+        <span class="vt-font text-lg text-mid">linkedin</span>
+      </a>
+      <a href="https://www.instagram.com/raksha_karn" class="flex flex-col items-center gap-2 group" style="text-decoration: none;" aria-label="Visit Raksha's Instagram profile">
+        <div class="social-icon-box">
+          <span class="iconify" data-icon="mdi:instagram" style="font-size: 28px; color: var(--dark);" aria-hidden="true"></span>
+        </div>
+        <span class="vt-font text-lg text-mid">instagram</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background: var(--dark); border-top: 4px solid var(--hot-pink); padding: 32px 24px; text-align: center;">
+  <div class="max-w-5xl mx-auto">
+    <p class="pixel-font text-xs mb-2 text-pink">made with ♡ and lots of tea</p>
+    <p class="vt-font text-xl" style="color: rgba(255,255,255,0.4);">
+      © 2025 Raksha Karn - Software Developer | Backend & AI/ML Specialist
+    </p>
+    <div class="flex justify-center gap-1 mt-4">
+      <span style="font-size: 12px; color: var(--pink);" aria-hidden="true">🌸</span>
+      <span style="font-size: 12px; color: var(--lavender);" aria-hidden="true">✦</span>
+      <span style="font-size: 12px; color: var(--mint);" aria-hidden="true">⭐</span>
+      <span style="font-size: 12px; color: var(--peach);" aria-hidden="true">♥</span>
+      <span style="font-size: 12px; color: var(--soft-yellow);" aria-hidden="true">✧</span>
+      <span style="font-size: 12px; color: var(--pink);" aria-hidden="true">🌸</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ─── Pixel Girl Drawing ───
+function drawPixelGirl() {
+  const canvas = document.getElementById('pixelGirl');
+  const ctx = canvas.getContext('2d');
+  const s = 8; // pixel scale
+
+  // Color palette
+  const skin = '#FFE0D0';
+  const hair = '#5A3D6E';
+  const hairLight = '#7B5E8F';
+  const shirt = '#FF9EBA';
+  const shirtDark = '#FF6B9D';
+  const skirt = '#C9B1FF';
+  const skirtDark = '#A78BDB';
+  const eyes = '#2D1B3D';
+  const blush = '#FFB8C8';
+  const shoes = '#FF6B9D';
+  const white = '#FFFFFF';
+  const outline = '#2D1B3D';
+
+  function px(x, y, color) {
+    ctx.fillStyle = color;
+    ctx.fillRect(x * s, y * s, s, s);
+  }
+
+  function clear() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+
+  // Hair back
+  function drawHairBack() {
+    for (let i = 4; i < 16; i++) {
+      px(i, 1, hair);
+      px(i, 2, hair);
+    }
+    for (let i = 3; i < 17; i++) px(i, 3, hair);
+    for (let i = 3; i < 17; i++) px(i, 4, hair);
+    // Side hair left
+    px(3, 5, hair); px(3, 6, hair); px(3, 7, hair); px(3, 8, hair);
+    px(3, 9, hair); px(3, 10, hair); px(3, 11, hair);
+    px(4, 10, hair); px(4, 11, hair);
+    // Side hair right
+    px(16, 5, hair); px(16, 6, hair); px(16, 7, hair); px(16, 8, hair);
+    px(16, 9, hair); px(16, 10, hair); px(16, 11, hair);
+    px(15, 10, hair); px(15, 11, hair);
+  }
+
+  // Face
+  function drawFace() {
+    // Skin
+    for (let i = 5; i < 15; i++) px(i, 5, skin);
+    for (let i = 4; i < 16; i++) px(i, 6, skin);
+    for (let i = 4; i < 16; i++) px(i, 7, skin);
+    for (let i = 4; i < 16; i++) px(i, 8, skin);
+    for (let i = 5; i < 15; i++) px(i, 9, skin);
+    for (let i = 5; i < 15; i++) px(i, 10, skin);
+    for (let i = 6; i < 14; i++) px(i, 11, skin);
+    
+    // Eyes
+    px(7, 7, eyes); px(8, 7, eyes);
+    px(12, 7, eyes); px(13, 7, eyes);
+    // Eye shine
+    px(7, 7, white); px(12, 7, white);
+    
+    // Blush
+    px(5, 9, blush); px(6, 9, blush);
+    px(13, 9, blush); px(14, 9, blush);
+    
+    // Mouth
+    px(9, 10, outline); px(10, 10, outline);
+    
+    // Hair bangs
+    for (let i = 4; i < 16; i++) px(i, 3, hair);
+    for (let i = 4; i < 7; i++) px(i, 4, hair);
+    for (let i = 9; i < 12; i++) px(i, 4, hair);
+    for (let i = 13; i < 16; i++) px(i, 4, hair);
+    // Bangs detail
+    px(7, 5, hair); px(8, 5, hair);
+    px(11, 5, hair); px(12, 5, hair);
+    px(4, 5, hair); px(15, 5, hair);
+    
+    // Hair ribbon
+    px(14, 2, '#FF6B9D');
+    px(15, 2, '#FF6B9D');
+    px(14, 1, '#FF6B9D');
+    px(15, 3, '#FF6B9D');
+    px(16, 2, '#FF6B9D');
+    px(16, 3, '#FF6B9D');
+  }
+
+  // Body
+  function drawBody() {
+    // Neck
+    px(9, 12, skin); px(10, 12, skin);
+    
+    // Shirt
+    for (let i = 6; i < 14; i++) px(i, 13, shirt);
+    for (let i = 5; i < 15; i++) px(i, 14, shirt);
+    for (let i = 5; i < 15; i++) px(i, 15, shirt);
+    for (let i = 5; i < 15; i++) px(i, 16, shirt);
+    for (let i = 6; i < 14; i++) px(i, 17, shirt);
+    for (let i = 6; i < 14; i++) px(i, 18, shirt);
+    
+    // Shirt detail - collar
+    px(9, 13, shirtDark); px(10, 13, shirtDark);
+    
+    // Arms
+    px(4, 14, shirt); px(3, 15, shirt); px(3, 16, shirt); px(3, 17, skin);
+    px(15, 14, shirt); px(16, 15, shirt); px(16, 16, shirt); px(16, 17, skin);
+    
+    // Skirt
+    for (let i = 5; i < 15; i++) px(i, 19, skirt);
+    for (let i = 4; i < 16; i++) px(i, 20, skirt);
+    for (let i = 4; i < 16; i++) px(i, 21, skirt);
+    for (let i = 5; i < 15; i++) px(i, 22, skirt);
+    
+    // Skirt detail
+    px(5, 20, skirtDark); px(10, 20, skirtDark); px(14, 20, skirtDark);
+    
+    // Legs
+    px(7, 23, skin); px(8, 23, skin);
+    px(11, 23, skin); px(12, 23, skin);
+    px(7, 24, skin); px(8, 24, skin);
+    px(11, 24, skin); px(12, 24, skin);
+    
+    // Shoes
+    px(6, 25, shoes); px(7, 25, shoes); px(8, 25, shoes);
+    px(11, 25, shoes); px(12, 25, shoes); px(13, 25, shoes);
+  }
+
+  let blinkFrame = 0;
+  let isBlinking = false;
+
+  function draw() {
+    clear();
+    drawHairBack();
+    drawFace();
+    drawBody();
+
+    // Blink logic
+    blinkFrame++;
+    if (blinkFrame > 150 && !isBlinking) {
+      isBlinking = true;
+      blinkFrame = 0;
+    }
+    if (isBlinking) {
+      if (blinkFrame < 5) {
+        // Draw closed eyes (overwrite)
+        ctx.fillStyle = skin;
+        ctx.fillRect(7 * s, 7 * s, s, s);
+        ctx.fillRect(8 * s, 7 * s, s, s);
+        ctx.fillRect(12 * s, 7 * s, s, s);
+        ctx.fillRect(13 * s, 7 * s, s, s);
+        ctx.fillStyle = outline;
+        ctx.fillRect(7 * s, 7 * s, 2 * s, 2);
+        ctx.fillRect(12 * s, 7 * s, 2 * s, 2);
+      }
+      if (blinkFrame > 10) {
+        isBlinking = false;
+        blinkFrame = 0;
+      }
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+}
+
+// ─── Typing Animation ───
+function typeText() {
+  const texts = [
+    'print("coding my way through life") ♡',
+    'cat hobbies.txt → reading, writing, dancing, sleeping',
+    'neofetch --cute',
+    'sudo turn off my alarm',
+  ];
+  const el = document.getElementById('typingText');
+  let textIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function type() {
+    const current = texts[textIndex];
+    
+    if (!isDeleting) {
+      el.textContent = current.substring(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === current.length) {
+        isDeleting = true;
+        setTimeout(type, 2000);
+        return;
+      }
+      setTimeout(type, 60 + Math.random() * 40);
+    } else {
+      el.textContent = current.substring(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(type, 500);
+        return;
+      }
+      setTimeout(type, 30);
+    }
+  }
+  type();
+}
+
+// ─── Floating Decorations ───
+function createFloatingElements() {
+  const container = document.getElementById('floatingElements');
+  const symbols = ['✦', '✧', '♡', '⋆', '∗', '°', '·', '✿'];
+  
+  for (let i = 0; i < 20; i++) {
+    const el = document.createElement('span');
+    el.className = 'floating-star';
+    el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    el.style.left = Math.random() * 100 + '%';
+    el.style.top = Math.random() * 100 + '%';
+    el.style.animationDelay = Math.random() * 3 + 's';
+    el.style.animationDuration = (2 + Math.random() * 3) + 's';
+    el.style.color = ['#FF9EBA', '#C9B1FF', '#B8F0D8', '#FFD4B8', '#FFF3B8'][Math.floor(Math.random() * 5)];
+    el.style.fontSize = (10 + Math.random() * 14) + 'px';
+    container.appendChild(el);
+  }
+}
+
+// ─── Scroll Reveal ───
+function initReveal() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
+// ─── Copy Email ───
+function copyEmail() {
+  navigator.clipboard.writeText('rakshakarn07@gmail.com').then(() => {
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2000);
+  });
+}
+
+// ─── Smooth Scroll ───
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// ─── Spawn hearts on click ───
+document.addEventListener('click', function(e) {
+  if (e.target.closest('.pixel-btn') || e.target.closest('a') || e.target.closest('nav')) return;
+  
+  const hearts = ['♡', '♥', '✦', '✧', '🌸'];
+  const heart = document.createElement('span');
+  heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+  heart.style.cssText = `
+    position: fixed;
+    left: ${e.clientX}px;
+    top: ${e.clientY}px;
+    pointer-events: none;
+    font-size: ${14 + Math.random() * 12}px;
+    color: ${['#FF9EBA', '#C9B1FF', '#B8F0D8', '#FFD4B8'][Math.floor(Math.random() * 4)]};
+    z-index: 9999;
+    animation: heart-float ${1 + Math.random()}s ease-out forwards;
+  `;
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 1500);
+});
+
+// ─── Init ───
+drawPixelGirl();
+typeText();
+createFloatingElements();
+initReveal();
+</script>
+
+</body>
 </html>
