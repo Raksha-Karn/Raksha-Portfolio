@@ -399,6 +399,10 @@ footer .vt-font {
   }
   .nav-link:hover::after { width: 100%; }
 
+  .site-logo-icon {
+    font-size: 20px;
+  }
+
   /* Toast notification */
   .toast {
     position: fixed;
@@ -482,9 +486,28 @@ footer .vt-font {
     border: 2px solid var(--dark);
   }
 
+  .experience-stat-value {
+    font-size: 42px;
+    line-height: 1;
+  }
+
+  .contact-title {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
   @media (max-width: 768px) {
-    .pixel-font { font-size: 10px !important; }
-    .hero-title { font-size: 18px !important; }
+    .pixel-font { font-size: 28px !important; }
+    .site-logo { font-size: 16px !important; gap: 6px !important; }
+    .site-logo-icon { font-size: 20px !important; }
+    .experience-stat-value { font-size: 32px !important; }
+    .hero-title { font-size: 36px !important; }
+    .contact-title { font-size: 28px !important; }
+    .project-card h3 { font-size: 24px !important; }
+    .skill-category h2 { font-size: 24px !important; }
+    #contact p { font-size: 18px !important; }
+    footer .pixel-font { font-size: 16px !important; }
+    footer .vt-font { font-size: 13px !important; }
     .nav-link { font-size: 14px; }
   }
 
@@ -646,6 +669,11 @@ footer .vt-font {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   line-height: 1.65;
+  font-size: 20px;
+}
+
+a.email-link {
+  font-size: 15px;
 }
 
 .nav-link,
@@ -669,6 +697,13 @@ footer .vt-font {
 
 .skill-tag {
   font-size: 14px;
+}
+
+.skill-category .skill-tag {
+  font-size: 16px;
+  padding: 4px 10px;
+  border-width: 2px;
+  box-shadow: 2px 2px 0 var(--dark);
 }
 
 .project-card h3 {
@@ -723,8 +758,8 @@ footer .vt-font {
 <!-- Navigation -->
 <nav class="fixed top-0 left-0 right-0 z-50" style="background: var(--cream); border-bottom: 4px solid var(--dark);" role="navigation" aria-label="Main navigation">
   <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="#home" class="pixel-font text-sm flex items-center gap-2" style="color: var(--hot-pink); text-decoration: none;" aria-label="Raksha Karn - Software Developer">
-      <span style="font-size: 20px;">🌸</span>
+    <a href="#home" class="pixel-font site-logo text-sm flex items-center gap-2" style="color: var(--hot-pink); text-decoration: none;" aria-label="Raksha Karn - Software Developer">
+      <span class="site-logo-icon">🌸</span>
       raksha.py
     </a>
     <div class="flex items-center gap-6">
@@ -755,7 +790,7 @@ footer .vt-font {
         <span class="status-dot"></span>
         <span class="vt-font text-xl text-mid">available for work</span>
       </div>
-      <h1 class="pixel-font hero-title text-2xl md:text-3xl leading-relaxed mb-6 text-dark">
+      <h1 class="pixel-font hero-title text-4xl md:text-4xl leading-relaxed mb-6 text-dark">
         hi, i'm <span style="color: var(--hot-pink);">raksha</span><br>
         
       </h1>
@@ -772,15 +807,15 @@ footer .vt-font {
       <!-- Experience Stats -->
       <div class="flex gap-8 mt-10 justify-center md:justify-start">
         <div class="text-center">
-          <div class="pixel-font text-2xl text-hot-pink">3+</div>
+          <div class="pixel-font experience-stat-value text-hot-pink">3+</div>
           <div class="vt-font text-lg text-mid">years exp</div>
         </div>
         <div class="text-center">
-          <div class="pixel-font text-2xl" style="color: var(--lavender);">50+</div>
+          <div class="pixel-font experience-stat-value" style="color: var(--lavender);">50+</div>
           <div class="vt-font text-lg text-mid">projects</div>
         </div>
         <div class="text-center">
-          <div class="pixel-font text-2xl" style="color: var(--mint);">∞</div>
+          <div class="pixel-font experience-stat-value" style="color: var(--mint);">∞</div>
           <div class="vt-font text-lg text-mid">cuddles</div>
         </div>
       </div>
@@ -803,7 +838,7 @@ footer .vt-font {
         <div class="terminal-dot" style="background: #FF6B6B;"></div>
         <div class="terminal-dot" style="background: var(--soft-yellow);"></div>
         <div class="terminal-dot" style="background: #7DFF8C;"></div>
-        <span class="vt-font text-sm ml-2" style="color: rgba(255,255,255,0.5);">raksha@portfolio ~ %</span>
+        <span class="vt-font text-sm ml-2" style="color: rgba(255,255,255,0.5);">raksha@portfolio %</span>
       </div>
       <div class="mt-2">
         <p><span style="color: var(--hot-pink);">$</span> cat about.txt</p>
@@ -1014,7 +1049,7 @@ footer .vt-font {
 <section id="contact" class="py-24 px-6">
   <div class="max-w-2xl mx-auto text-center reveal">
     <span style="font-size: 48px;" class="animate-bounce-small inline-block" aria-hidden="true">💌</span>
-    <h2 class="pixel-font text-lg mt-4 mb-4 text-dark">
+    <h2 class="pixel-font contact-title mt-4 mb-4 text-dark">
       let's be friends~ <span style="color: var(--hot-pink);">♥</span>
     </h2>
     <p class="vt-font text-2xl mb-10 text-mid fw-400">
@@ -1024,7 +1059,6 @@ footer .vt-font {
 
     <!-- Email contact box -->
     <div class="email-contact-box inline-flex items-center gap-3 mb-10 px-6 py-4">
-      <span style="font-size: 20px;" aria-hidden="true">📧</span>
       <a class="email-link vt-font text-mid text-dark" id="emailText" href="https://mail.google.com/mail/?view=cm&fs=1&to=rakshakarn07%40gmail.com" target="_blank" rel="noopener" aria-label="Email Raksha at rakshakarn07@gmail.com using Gmail">
         rakshakarn07@gmail.com
       </a>
@@ -1055,7 +1089,7 @@ footer .vt-font {
 <footer style="background: var(--dark); border-top: 4px solid var(--hot-pink); padding: 32px 24px; text-align: center;">
   <div class="max-w-5xl mx-auto">
     <p class="pixel-font text-xs mb-2 text-pink">made with ♡ and lots of tea</p>
-    <p class="vt-font text-lg" style="color: rgba(255,255,255,0.4);">
+    <p class="vt-font text-md" style="color: rgba(255,255,255,0.4);">
       © 2026 Raksha Karn - Software Developer | Backend & AI/ML Specialist
     </p>
     <div class="flex justify-center gap-1 mt-4">
